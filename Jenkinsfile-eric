@@ -17,7 +17,7 @@ pipeline {
     stage('build the image') {
             steps {
                 sh '''
-              docker build -t eric:001 . 
+              docker build -t adele:001 . 
                 '''
             }
         }
@@ -33,7 +33,7 @@ pipeline {
     stage('launch container') {
             steps {
                 sh '''
-            docker run -i --name eric eric:001
+            docker run -i --name adele adele:001
                 '''
             }
         }
